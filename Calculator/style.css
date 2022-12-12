@@ -1,0 +1,92 @@
+body {
+    padding-top: 1.5cm;
+    text-align: center;
+    background-color: rgb(235, 230, 230);
+}
+
+.Container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "display display display display "
+        "clear clean divide multiply"
+        "seven eight nine subtract"
+        "four five six add"
+        "one two three equals"
+        "zero zero decimal equals";
+}
+
+.padButton {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px ;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.padButton:hover {
+    border: 3px solid gray;
+    color: white;
+}
+
+#display {grid-column: 1/-1;
+    grid-area: display;
+    background-color: black;
+    text-align: right;
+    font-size: 20px;
+
+}
+
+
+.total { 
+    text-align: right;
+    padding: 10px 20px;
+    color: red;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#equals {
+    grid-area: equals;
+    background-color: rgb(4, 60, 87);
+}
+
+#clear {
+    background-color: brown;
+
+}
+
+#clean {
+    background-color: brown;
+}
+
+#divide {
+    background-color: gray;
+}
+
+#multiply {
+    background-color: gray;
+}
+
+#subtract {
+    background-color: gray;
+}
+
+#add {
+    background-color: gray;
+}
